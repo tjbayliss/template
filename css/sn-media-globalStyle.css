@@ -1,0 +1,460 @@
+/* @MEDIA RESPONSIVENESS CSS */
+
+/* very small devices  */
+@media (max-width: 575px) {
+  .sn-paragraph-black {
+    margin: 0px 25px 25px 25px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 0.75rem;
+    color: #fff;
+  }
+
+  .sn-header-black {
+    margin-left: 25px;
+    color: #fff;
+  }
+
+  .sn-title-black {
+    margin-left: 25px;
+    color: #fff;
+  }
+
+  .sn-paragraph-white {
+    margin: 0px 25px 25px 25px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 0.75rem;
+    color: #000000;
+  }
+
+  .sn-header-white {
+    margin-left: 25px;
+    color: #000000;
+  }
+
+  .sn-title-white {
+    margin-left: 25px;
+    color: #000000;
+  }
+  .col-md-6 {
+    flex: 0 0 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .sn-paragraph-black {
+    margin: 0px 25px 25px 25px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 0.75rem;
+    color: #fff;
+  }
+
+  .sn-header-black {
+    margin-left: 25px;
+    color: #fff;
+  }
+
+  .sn-title-black {
+    margin-left: 25px;
+    color: #fff;
+  }
+
+  .sn-paragraph-white {
+    margin: 0px 25px 25px 25px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 0.75rem;
+    color: #000000;
+  }
+
+  .sn-header-white {
+    margin-left: 25px;
+    color: #000000;
+  }
+
+  .sn-title-white {
+    margin-left: 25px;
+    color: #000000;
+  }
+  .col-md-6 {
+    flex: 0 0 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .sn-paragraph-black {
+    margin: 0px 25px 25px 25px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 0.75rem;
+    color: #fff;
+  }
+
+  .sn-header-black {
+    margin-left: 25px;
+    color: #fff;
+  }
+
+  .sn-title-black {
+    margin-left: 25px;
+    color: #fff;
+  }
+
+  .sn-paragraph-white {
+    margin: 0px 25px 25px 25px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 0.75rem;
+    color: #000000;
+  }
+
+  .sn-header-white {
+    margin-left: 25px;
+    color: #000000;
+  }
+
+  .sn-title-white {
+    margin-left: 25px;
+    color: #000000;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .sn-paragraph-black {
+    margin: 0px 50px 25px 50px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .sn-header-black {
+    margin-left: 50px;
+    color: #fff;
+  }
+
+  .sn-title-black {
+    margin-left: 50px;
+    color: #fff;
+  }
+
+  .sn-paragraph-white {
+    margin: 0px 50px 25px 50px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 1rem;
+    color: #000000;
+  }
+
+  .sn-header-white {
+    margin-left: 50px;
+    color: #000000;
+  }
+
+  .sn-title-white {
+    margin-left: 50px;
+    color: #000000;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .sn-paragraph-black {
+    margin: 0px 50px 25px 50px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .sn-header-black {
+    margin-left: 50px;
+    color: #fff;
+  }
+
+  .sn-title-black {
+    margin-left: 50px;
+    color: #fff;
+  }
+
+  .sn-paragraph-white {
+    margin: 0px 50px 25px 50px; /* TOP RIGHT BOTTOM LEFT */
+    font-size: 1rem;
+    color: #000000;
+  }
+
+  .sn-header-white {
+    margin-left: 50px;
+    color: #000000;
+  }
+
+  .sn-title-white {
+    margin-left: 50px;
+    color: #000000;
+  }
+  .col-md-6 {
+    flex: 0 0 33%;
+  }
+}
+
+/* GLOBAL CSS */
+
+.container {
+  max-width: 1500px;
+}
+
+.sn-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+.sn-body-black {
+  background-color: #211f20 !important;
+}
+
+.sn-body-white {
+  background-color: #ffffff !important;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.sn-logo {
+  margin-left: 25px;
+  position: relative;
+  top: 0%;
+  left: 0px;
+  width: 100px;
+  margin-right: 0px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.sn-a-dark {
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.sn-a-light {
+  text-decoration: none;
+  color: #000000;
+  font-weight: lighter;
+}
+
+.sn-fullWidth-dark #rights span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.sn-fullWidth-light #rights span {
+  color: #000000;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.navbar-brand {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.nav-link-dark {
+  font-size: 14px;
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: 300;
+}
+
+.nav-link-light {
+  font-size: 14px;
+  color: #000000 !important;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: 300;
+}
+
+ul li {
+  float: left;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 10px 20px;
+}
+
+.navigation-top {
+  width: 700px;
+  float: right;
+}
+
+.sn-visual {
+  width: 100%;
+  height: 200px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #211f20;
+  left: 0px;
+  position: absolute;
+  display: inline-block;
+}
+
+.sn-svgVisualBase {
+  background-color: #211f20;
+}
+
+h1 {
+  font-weight: bold;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+h3 {
+  color: #fff;
+}
+
+h4 {
+  color: #fff;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'>
+<path stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/>
+</svg>
+ */
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.sn-footer-black {
+  background-color: #211f20 !important;
+  z-index: 100;
+}
+
+.sn-footer-white {
+  background-color: #ffffff !important;
+  z-index: 100;
+}
+
+.sn-footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.sn-navbar-black {
+  background-color: #211f20 !important;
+}
+
+.sn-navbar-white {
+  background-color: #ffffff !important;
+}
+
+.sn-cell {
+  height: auto;
+  /*   background-color: #ffffff; */
+}
+
+.sn-cell-dark {
+  background-color: #211f20;
+}
+
+.sn-cell-light {
+  background-color: #ffffff;
+}
+
+.sn-cell0 {
+  /* background-color: #ffffff; */
+}
+
+.sn-cell1 {
+  /* background-color: #ffffff; */
+}
+
+.sn-cell2 {
+  /*  background-color: #ffffff; */
+}
+
+.sn-cell3 {
+  /*  background-color: #ffffff; */
+}
+
+.sn-cell4 {
+  /*  background-color: #ffffff; */
+}
+
+.sn-cell5 {
+  /*  background-color: #ffffff; */
+}
+
+.sn-placeholder {
+  width: 100%;
+}
+
+.sn-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fullWidth {
+  width: 100%;
+}
