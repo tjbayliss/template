@@ -1,3 +1,4 @@
 var sn = {
-    browserTabTitle: "Springer-Nature"
+    browserTabTitle: "Springer-Nature",
+    logoSrc: "image/logo-springernature.svg"
 }
