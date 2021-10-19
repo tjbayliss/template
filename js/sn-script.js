@@ -42,7 +42,8 @@ window.onpaint = preloadFunc();
 function preloadFunc() {
 
   d3.selectAll(".browserTabTitle").text(sn.browserTabTitle);
-  d3.selectAll(".sn-logo").attr("src", sn.logoSrc)
+  d3.selectAll(".sn-logo").attr("src", sn.logoSrc);
+  // d3.selectAll(".sn-privacy-policy").text("")
   alertSize();
 
   return;
