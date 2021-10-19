@@ -41,7 +41,6 @@ window.onpaint = preloadFunc();
 */
 function preloadFunc() {
 
-  console.log(sn);
   d3.selectAll(".browserTabTitle").text(sn.browserTabTitle)
   alertSize();
 
@@ -77,19 +76,30 @@ function onload() {
 */
 function loadData() {
   // load CSV data file
-  d3.csv("data/data.csv")
-    .then(function (data) {
-      // for each data row ... process and add information needed
-      data.forEach(function (d, i) {
-        //  console.log(i,d)
-      });
 
-      // call function to initially draw chart
-      drawChart(data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  // pyramid chart input files
+  var dataFile = "data/data.csv";
+
+  // store all input files as a Promise
+  Promise.all([
+    d3.csv(dataFile),
+  ]).then(function (data) {
+    // locally store data
+
+    data = data[0];
+
+    console.log(data)
+    //     data.forEach(function (d, i) {
+    //       //  console.log(i,d)
+    //     });
+
+
+    // stores all data ahas JSON element in global JSON object
+    sn.data = data;
+
+    console.log(sn);
+    drawChart();
+  });
 
   return;
 } // end function loadData
