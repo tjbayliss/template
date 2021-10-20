@@ -43,7 +43,7 @@ function preloadFunc() {
   console.log(config, config[config.type], config[config.type].logoWidth)
 
   d3.selectAll(".browserTabTitle").text(config[config.type].browserTabTitle);
-  d3.selectAll(".logo").attr("src", config[config.type].logoSrc).style("width", config[config.type].logoWidth);
+  d3.selectAll(".logo").attr("src", config[config.type].logoSrc).style("height", config[config.type].logoHeight);
   d3.selectAll(".home-href").attr("href", config[config.type].homeHref);
   d3.selectAll(".work-href").attr("href", config[config.type].workHref);
 

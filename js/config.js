@@ -1,12 +1,12 @@
 var config = {
-    type: "av",
+    type: "sn",
     av: {
         browserTabTitle: "Ableview",
-        logoSrc: "image/ableview.svg",
+        logoSrc: "image/ableviewVisualisations.svg",
         homeHref: "https://www.ableview.co.uk",
         workHref: "https://www.ableview.co.uk/work",
         navigation: false,
-        logoWidth: "150px"
+        logoHeight: "35px"
     },
     sn: {
         browserTabTitle: "Springer-Nature",
@@ -14,6 +14,6 @@ var config = {
         homeHref: "https://www.springernature.com/gp",
         workHref: "https://www.springernature.com/gp",
         navigation: false,
-        logoWidth: "250px"
+        logoHeight: "25px"
     }
 };
