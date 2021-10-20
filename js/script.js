@@ -40,10 +40,20 @@ window.onpaint = preloadFunc();
     CALLS: alertSize
 */
 function preloadFunc() {
+  console.log(config, config[config.type])
 
-  d3.selectAll(".browserTabTitle").text(sn.browserTabTitle);
-  d3.selectAll(".sn-logo").attr("src", sn.logoSrc);
-  // d3.selectAll(".sn-privacy-policy").text("")
+  d3.selectAll(".browserTabTitle").text(config[config.type].browserTabTitle);
+  d3.selectAll(".logo").attr("src", config[config.type].logoSrc);
+  d3.selectAll(".home-href").attr("href", config[config.type].homeHref);
+  d3.selectAll(".work-href").attr("href", config[config.type].workHref);
+
+  if (config[config.type].navigation == true) {
+    d3.selectAll(".navbar-container").classed("hide", false);
+  }
+  else {
+    d3.selectAll(".navbar-container").classed("hide", true);
+  }
+
   alertSize();
 
   return;
@@ -90,16 +100,16 @@ function loadData() {
 
     data = data[0];
 
-    console.log(data)
+    // console.log(data)
     //     data.forEach(function (d, i) {
     //       //  console.log(i,d)
     //     });
 
 
     // stores all data ahas JSON element in global JSON object
-    sn.data = data;
+    config.data = data;
 
-    console.log(sn);
+    console.log(config);
     drawChart();
   });
 
@@ -170,8 +180,18 @@ function drawChart(data) {
     http://bl.ocks.org/johangithub/97a186c551e7f6587878
 */
 function windowSize() {
-  // update glvbal wisdth varaible based on new window dimensions
-  // accommodarte small window siz efor left margin
+
+
+  if (config[config.type].navigation == true) {
+    d3.selectAll(".navbar-container").classed("hide", false);
+  }
+  else {
+    d3.selectAll(".navbar-container").classed("hide", true);
+  }
+
+
+  // update global width variable based on new window dimensions
+  // accommodate small window size for left margin
 
   visualWidth = document.getElementById("visual").clientWidth;
   visualHeight = document.getElementById("visual").clientHeight;

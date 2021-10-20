@@ -228,7 +228,7 @@ body {
   }
 }
 
-.sn-logo {
+.logo {
   margin-left: 25px;
   position: relative;
   top: 0%;
@@ -457,4 +457,8 @@ code {
 
 .fullWidth {
   width: 100%;
+}
+
+.hide {
+  display: none;
 }
