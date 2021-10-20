@@ -1,88 +1,76 @@
 <!doctype html>
-
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
   <title class="browserTabTitle"></title>
 
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbar-fixed/">
+
+
+
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
 
   <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+  <link href="css/navbar-top-fixed.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="sn-body-black hite d-flex flex-column h-100" onload="onload()">
-  <header>
+<body>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar sn-navbar-black navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md fixed-top bg-dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Fixed navbar</a> -->
+      <a target="_blank" class="home-href"><img class="logo logo-black"></a>
 
-      <a target="_blank" class="home-href"><img class="logo sn-logo-black"></a>
-
-      <div class="navbar-container hide">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link-dark home-href" target="_blank">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link-dark work-href" target="_blank">Work</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Begin page content -->
-  <main role="main" class="flex-shrink-0">
-    <div class="container">
-      <h1 class="mt-5 sn-header-black"></h1>
-      <h3 class="mt-5 sn-title-black"></h3>
-      <p class="sn-paragraph-black">
-      </p>
-      <p class="sn-paragraph-black">
-      </p>
-      <div class="row justify-content-center">
-
-        <div class="col-lg-12 col-md-12">
-          <div class="sn-visual" id="visual"></div>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active home-href" aria-current="page" target="_blank">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link work-href" target="_blank">Work</a>
+          </li>
+          <!--           <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
       </div>
     </div>
-  </main>
+  </nav>
 
-  <footer class="sn-footer-black sn-fullWidth-dark mt-auto py-3">
+  <main class="container">
+  </main>
+  <footer class="footer fullWidth-dark mt-auto py-3">
 
     <div class="container" id="rights">
-      <span> <a class="sn-privacy-policy" href="/privacy-policy">Privacy Policy</a></span>
+      <span> <a class="privacy-policy" href="#">Privacy Policy</a></span>
 
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="js/jQuery-v3.4.1.js"></script>
   <script type="text/javascript" src="js/jquery-ui.js"></script>
-  <!--   <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
-  <script type="text/javascript" src="https://d3js.org/queue.v1.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
   <script type="text/javascript" src="js/general-functions.js"></script>
   <script type="text/javascript" src="js/config.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+</body>
 
 </html>

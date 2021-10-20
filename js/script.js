@@ -40,12 +40,28 @@ window.onpaint = preloadFunc();
     CALLS: alertSize
 */
 function preloadFunc() {
-  console.log(config, config[config.type])
+  console.log(config, config[config.type], config[config.type].logoWidth)
 
   d3.selectAll(".browserTabTitle").text(config[config.type].browserTabTitle);
-  d3.selectAll(".logo").attr("src", config[config.type].logoSrc);
+  d3.selectAll(".logo").attr("src", config[config.type].logoSrc).style("width", config[config.type].logoWidth);
   d3.selectAll(".home-href").attr("href", config[config.type].homeHref);
   d3.selectAll(".work-href").attr("href", config[config.type].workHref);
+
+  if (config.type == "av") {
+    d3.selectAll(".navbar").classed("navbar-black", true).classed("navbar-white", false)
+    d3.selectAll(".footer").classed("footer-black", true).classed("footer-white", false)
+    d3.selectAll(".nav-link.active").style("color", "#FFF")
+    d3.selectAll(".nav-link").style("color", "rgba(255,255,255,.55)")
+    d3.selectAll(".navbar-toggler").classed("navbar-dark", true).classed("navbar-light", false)
+  }
+  else {
+    d3.selectAll(".navbar").classed("navbar-black", false).classed("navbar-white", true)
+    d3.selectAll(".footer").classed("footer-black", false).classed("footer-white", true)
+    d3.selectAll(".nav-link.active").style("color", "#211f20")
+    d3.selectAll(".nav-link").style("color", "rgba(33, 31, 32,.55)")
+
+    d3.selectAll(".navbar-toggler").classed("navbar-dark", false).classed("navbar-light", true)
+  }
 
   if (config[config.type].navigation == true) {
     d3.selectAll(".navbar-container").classed("hide", false);
@@ -193,15 +209,15 @@ function windowSize() {
   // update global width variable based on new window dimensions
   // accommodate small window size for left margin
 
-  visualWidth = document.getElementById("visual").clientWidth;
-  visualHeight = document.getElementById("visual").clientHeight;
+  // visualWidth = document.getElementById("visual").clientWidth;
+  // visualHeight = document.getElementById("visual").clientHeight;
 
   // update width value of visual DIV after updating margins based on screen size
   // width = visualWidth - margin.left - margin.right;
 
-  d3.selectAll(".sn-svgVisualBase")
-    .attr("width", visualWidth)
-    .attr("height", visualHeight);
+  // d3.selectAll(".sn-svgVisualBase")
+  //   .attr("width", visualWidth)
+  //   .attr("height", visualHeight);
 
   return;
 } // end function windowSize
